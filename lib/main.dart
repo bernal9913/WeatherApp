@@ -271,9 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
               "índice íconos:$_idx",
               style: const TextStyle(fontSize: 20, letterSpacing: 1.5),
             ),
-            // Display the first image
             Container(
-              // Set the height and width of the Container
               height: 300,
               width: 400,
               child: Stack(
@@ -350,8 +348,8 @@ class _MyHomePageState extends State<MyHomePage> {
           content: Column(
             children: [
               Image.network(
-                'https://static.wikia.nocookie.net/zelda/images/1/1c/TotK_-_Link_imagen_oficial.png/revision/latest?cb=20230220223232&path-prefix=es', // Reemplaza con la URL de la imagen
-                height: 400, // Ajusta la altura según tus necesidades
+                'https://static.wikia.nocookie.net/zelda/images/1/1c/TotK_-_Link_imagen_oficial.png/revision/latest?cb=20230220223232&path-prefix=es',
+                height: 400, 
               ),
               SizedBox(height: 10),
               Text('Jesus Carlos Ramirez'),
@@ -375,9 +373,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // Actualiza las coordenadas según la ciudad seleccionada
     List<double> coordinates = cityCoordinates[selectedCity] ?? [0, 0];
 
-    // Realiza la consulta utilizando las nuevas coordenadas
-    // Asegúrate de adaptar esta lógica según tu código existente
-    // Aquí simplemente estoy mostrando un mensaje con las coordenadas
+
     print('Nuevas coordenadas: $coordinates');
     var data = await fetchJSON(_token!, coordinates);
 
